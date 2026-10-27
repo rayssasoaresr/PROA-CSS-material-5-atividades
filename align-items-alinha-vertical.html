@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align-items - Alinhamento Vertical</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f0ff;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #6a1b9a;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    /* ========================================
+      CONTAINER PADRÃO
+      ======================================== */
+    .container {
+      display: flex;
+      height: 150px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      gap: 10px;
+      border: 3px solid #6a1b9a;
+      max-width: 600px;
+    }
+
+    /* ========================================
+      VALORES DE ALIGN-ITEMS
+      ======================================== */
+
+    /* 1 stretch (padrão) */
+    .stretch {
+      align-items: stretch;
+      background: #f3e5f5;
+      border-color: #6a1b9a;
+    }
+
+    /* 2 flex-start */
+    .flex-start {
+      align-items: flex-start;
+      background: #e3f2fd;
+      border-color: #1565c0;
+    }
+
+    /* 3 flex-end */
+    .flex-end {
+      align-items: flex-end;
+      background: #e8f5e9;
+      border-color: #2e7d32;
+    }
+
+    /* 4 center */
+    .center {
+      align-items: center;
+      background: #fff3e0;
+      border-color: #e65100;
+    }
+
+    /* 5 baseline */
+    .baseline {
+      align-items: baseline;
+      background: #fce4ec;
+      border-color: #c62828;
+    }
+
+    /* ========================================
+      ESTILO DOS ITENS
+      ======================================== */
+    .item {
+      background: #6a1b9a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Cores diferentes para cada container */
+    .flex-start .item {
+      background: #1565c0;
+    }
+
+    .flex-end .item {
+      background: #2e7d32;
+    }
+
+    .center .item {
+      background: #e65100;
+    }
+
+    .baseline .item {
+      background: #c62828;
+    }
+
+    /* Itens com tamanhos diferentes para ver o baseline */
+    .item-grande {
+      font-size: 30px;
+      padding: 20px 30px;
+    }
+
+    .item-pequeno {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+
+    .item-medio {
+      font-size: 20px;
+      padding: 15px 25px;
+    }
+
+    /* ========================================
+      TÍTULOS
+      ======================================== */
+    .titulo {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .descricao {
+      color: #555;
+      font-size: 13px;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>align-items - Alinhamento Vertical</h1>
+
+  <!-- ==========================================
+     1 STRETCH (PADRÃO)
+     ========================================== -->
+  <div class="container stretch">
+    <div>
+      <div class="titulo">1 stretch (padrão)</div>
+      <!-- <div class="descricao">Itens esticam para preencher a altura</div> -->
+      <div style="display: flex; align-items: stretch; gap: 10px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     2 FLEX-START
+     ========================================== -->
+  <div class="container flex-start">
+    <div>
+      <div class="titulo">2 flex-start</div>
+      <!-- <div class="descricao">Itens alinhados no TOPO</div> -->
+      <div style="display: flex; align-items: flex-start; gap: 10px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     3 FLEX-END
+     ========================================== -->
+  <div class="container flex-end">
+    <div>
+      <div class="titulo">3 flex-end</div>
+      <!-- <div class="descricao">Itens alinhados no FUNDO</div> -->
+      <div style="display: flex; align-items: flex-end; gap: 10px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+    4 CENTER
+     ========================================== -->
+  <div class="container center">
+    <div>
+      <div class="titulo">4 center</div>
+      <div class="descricao">Itens alinhados no CENTRO vertical</div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+     5 BASELINE
+     ========================================== -->
+  <div class="container baseline">
+    <div>
+      <div class="titulo">5 baseline</div>
+      <!-- <div class="descricao">Itens alinhados pela LINHA BASE do texto</div> -->
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <div class="item item-grande">Grande</div>
+        <div class="item item-medio">Médio</div>
+        <div class="item item-pequeno">Pequeno</div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

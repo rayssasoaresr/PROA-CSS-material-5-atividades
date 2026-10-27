@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAP</title>
+    <style>
+            /* ========================================
+           SEM GAP (espaço entre os itens)
+           ======================================== */
+        .sem-gap {
+            display: flex;
+            background: #f3e5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* ========================================
+           COM GAP (espaço entre os itens)
+           ======================================== */
+        .com-gap {
+            display: flex;
+            gap: 20px;
+            background: #e3f2fd;
+            padding: 20px;
+        }
+         /* ========================================
+           ESTILO DAS CAIXAS
+           ======================================== */
+        .caixa {
+            background: #6a1b9a;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+        }
+
+        .caixa-azul {
+            background: #1565c0;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>📌 SEM GAP (espaço entre os itens)</h2>
+ <div class="sem-gap">
+ <div class="caixa">1</div>
+ <div class="caixa">2</div>
+ <div class="caixa">3</div>
+ </div>
+
+ <h2>📌 COM GAP: 20px (espaço entre os itens)</h2>
+ <div class="com-gap">
+ <div class="caixa-azul">1</div>
+ <div class="caixa-azul">2</div>
+ <div class="caixa-azul">3</div>
+ </div>
+</body>
+</html>

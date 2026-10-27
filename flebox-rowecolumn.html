@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Row e Column</title>
+    
+    <style>
+        /* ========================================
+           ROW - lado a lado
+           ======================================== */
+        .container-row {
+            display: flex;
+            flex-direction: row; /* padrão - lado a lado */
+            background: #f3e5f5;
+            padding: 20px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* ========================================
+           COLUMN - um abaixo do outro
+           ======================================== */
+        .container-column {
+            display: flex;
+            flex-direction: column; /* um abaixo do outro */
+            background: #e3f2fd;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        /* ========================================
+           ESTILO DAS CAIXAS
+           ======================================== */
+        .caixa {
+            background: #6a1b9a;
+            color: white;
+            padding: 30px 40px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .caixa-azul {
+            background: #1565c0;
+            color: white;
+            padding: 30px 40px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📌 Flex-direction: row (lado a lado)</h2>
+    <div class="container-row">
+        <div class="caixa">1</div>
+        <div class="caixa">2</div>
+        <div class="caixa">3</div>
+    </div>
+
+    <h2>📌 Flex-direction: column (um abaixo do outro)</h2>
+    <div class="container-column">
+        <div class="caixa-azul">1</div>
+        <div class="caixa-azul">2</div>
+        <div class="caixa-azul">3</div>
+    </div>
+
+</body>
+</html>

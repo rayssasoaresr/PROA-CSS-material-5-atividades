@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6 - Galeria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        .galeria-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        .card {
+            width: 220px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center; margin: 20px 0; color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">Espaço</h2>
+
+    <div class="galeria-container">
+        
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D0CYeJsOAoZAT29y2L7xItRj7dlEoVdn2rnMe-APZQ&s=10" alt="Imagem 1">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUU3pPpWZ6UKkZYgS1rKV5QyVYlC7NOi2ZioCCVyoIA&s=10" alt="Imagem 2">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9zKUKJbGgqBccHtwtnWmPeyyS04PRxmpsOhsckabWA&s=10" alt="Imagem 3">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zrEbm6h1kO93cgYnqBteBno5hcphfjELD3Kw4wgEYQ&s=10" alt="Imagem 4">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4hdD-2kWBb0WmuSKfUazsASt7KIIx-feIOEDqOzdM0Q&s=10" alt="Imagem 5">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://images-assets.nasa.gov/image/jsc2026e020490/jsc2026e020490~large.jpg?w=1920&h=1279&fit=clip&crop=faces%2Cfocalpoint" alt="Imagem 6">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/rst/spacecraft-illustrations/Roman_BeautyPass2026-med.png?w=2000&h=1125&fit=crop&crop=faces%2Cfocalpoint" alt="Imagem 7">
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://google.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGN613avzfOHaQZA3l3vhjPqI75EFnP0ByEiKH40rWQ&s=10" alt="Imagem 8">
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

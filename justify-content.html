@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justify-content - Todos os valores</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f0ff;
+      padding: 20px;
+    }
+
+    /* ========================================
+      CONTAINER PADRÃO
+      ======================================== */
+    .container {
+      display: flex;
+      background: #f3e5f5;
+      padding: 20px;
+      margin-bottom: 15px;
+      border: 2px solid #6a1b9a;
+      border-radius: 10px;
+      gap: 10px;
+      max-width: 700px;
+    }
+
+    /* ========================================
+      CADA TIPO DE JUSTIFY-CONTENT
+      ======================================== */
+    .flex-start {
+      justify-content: flex-start; /* padrão - início */
+    }
+
+    .flex-end {
+      justify-content: flex-end; /* fim */
+    }
+
+    .center {
+      justify-content: center; /* centro */
+    }
+
+    .space-between {
+      justify-content: space-between; /* espaço entre */
+    }
+
+    .space-around {
+      justify-content: space-around; /* espaço ao redor */
+    }
+
+    .space-evenly {
+      justify-content: space-evenly; /* espaço igual em todos */
+    }
+
+    /* ========================================
+      ESTILO DAS CAIXAS
+      ======================================== */
+    .caixa {
+      background: #6a1b9a;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* ========================================
+      TÍTULOS
+      ======================================== */
+    h2 {
+      color: #6a1b9a;
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .legenda {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: #6a1b9a; margin-bottom: 20px;">📌 justify-content - Todos os valores</h1>
+
+  <!-- ========================================
+     1 FLEX-START (PADRÃO)
+     ======================================== -->
+  <h2>1 flex-start (padrão)</h2>
+  <p class="legenda">→ Elementos no INÍCIO</p>
+  <div class="container flex-start">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     2 FLEX-END
+     ======================================== -->
+  <h2>2 flex-end</h2>
+  <p class="legenda">→ Elementos no FIM</p>
+  <div class="container flex-end">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     3 CENTER
+     ======================================== -->
+  <h2>3 center</h2>
+  <p class="legenda">→ Elementos no CENTRO</p>
+  <div class="container center">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     4 SPACE-BETWEEN
+     ======================================== -->
+  <h2>4 space-between</h2>
+  <p class="legenda">→ Espaço igual ENTRE os elementos</p>
+  <div class="container space-between">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     5 SPACE-AROUND
+     ======================================== -->
+  <h2>5 space-around</h2>
+  <p class="legenda">→ Espaço igual AO REDOR dos elementos</p>
+  <div class="container space-around">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     6 SPACE-EVENLY
+     ======================================== -->
+  <h2>6 space-evenly</h2>
+  <p class="legenda">→ Espaço igual em TODOS os lados</p>
+  <div class="container space-evenly">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+
+  <!-- ========================================
+     RESUMO
+     ======================================== -->
+  <div style="background: white; padding: 20px; border-radius: 10px; max-width: 700px; margin-top: 30px; border-left: 4px solid #6a1b9a;">
+    <h3> Resumo</h3>
+    <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+      <tr style="background: #6a1b9a; color: white;">
+        <th>Valor</th>
+        <th>O que faz</th>
+      </tr>
+      <tr>
+        <td><code>flex-start</code></td>
+        <td>Elementos no <strong>início</strong></td>
+      </tr>
+      <tr>
+        <td><code>flex-end</code></td>
+        <td>Elementos no <strong>fim</strong></td>
+      </tr>
+      <tr>
+        <td><code>center</code></td>
+        <td>Elementos no <strong>centro</strong></td>
+      </tr>
+      <tr>
+        <td><code>space-between</code></td>
+        <td>Espaço igual <strong>ENTRE</strong> os elementos</td>
+      </tr>
+      <tr>
+        <td><code>space-around</code></td>
+        <td>Espaço igual <strong>AO REDOR</strong> dos elementos</td>
+      </tr>
+      <tr>
+        <td><code>space-evenly</code></td>
+        <td>Espaço igual em <strong>TODOS</strong> os lados</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

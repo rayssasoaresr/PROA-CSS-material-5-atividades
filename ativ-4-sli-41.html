@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4 - Gap</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            display: flex;
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+
+        .fundo-marrom {
+            background-color: #ad835e;
+        }
+
+        .fundo-marrom2 {
+            background-color: #614932;
+        }
+
+        .fundo-marrom3 {
+            background-color: #3e261c;
+        }
+
+        .gap-10 {
+            gap: 10px;
+        }
+
+        .gap-30 {
+            gap: 30px;
+        }
+
+        .item {
+            background-color: #9d5d0f;
+            color: rgb(7, 5, 1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>1 - Sem gap</h3>
+    <div class="container fundo-marrom">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>2 - gap de 10px</h3>
+    <div class="container fundo-marrom2 gap-10">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h3>3 - gap de 30px</h3>
+    <div class="container fundo-marrom3 gap-30">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+</body>
+</html>
